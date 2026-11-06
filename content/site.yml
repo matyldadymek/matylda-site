@@ -1,0 +1,33 @@
+# Your name, welcome page and contact page.
+
+name: Matylda Dymek
+
+welcome:
+  headline: Film and video editor. Storytelling is at the heart and soul of everything I do.
+  roles:
+    - Editor
+    - Producer / editor
+    - Motion graphics
+    - Content creator
+  intro: >
+    Educated in Sweden, the UK, France and the Łódź Film School in Poland.
+    I've cut fiction and documentary for the big screen, and broadcast,
+    streaming and social media for the smaller ones.
+  photo: images/stockholm.jpg
+  photo_caption: Here I am over the iced waters of Stockholm.
+
+contact:
+  headline: Say hello!
+  text: I speak four languages and I am/can be very friendly ;)
+  email: me@matyldadymek.co.uk
+  photo: images/istanbul.jpg
+  photo_caption: Here's me in glorious Istanbul!
+  links:
+    - name: Vimeo
+      url: https://vimeo.com/user9451346
+    - name: LinkedIn
+      url: https://www.linkedin.com/in/matylda-dymek-7a504893/
+    - name: Facebook
+      url: https://www.facebook.com/matylda.dymek
+    - name: X / Twitter
+      url: https://twitter.com/matyldadymek

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matylda Dymek – Film and video editor</title>
+<meta name="description" content="Matylda Dymek, film and video editor, producer/editor and motion graphics. Fiction, documentary, broadcast, streaming and social media. Paris, London, Stockholm, Łódź.">
+<meta property="og:title" content="Matylda Dymek – Film and video editor">
+<meta property="og:description" content="Fiction, documentary, broadcast, streaming and social media.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="name"><a href="#home">Matylda Dymek</a></p>
+    <nav aria-label="Main"><ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul></nav>
+  </header>
+  <div class="line"></div>
+  <main id="main"><p class="loading">Loading…</p></main>
+  <footer>© Matylda Dymek</footer>
+</div>
+
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mt">
+  <div class="panel">
+    <div class="screen" id="screen"></div>
+    <div class="pinfo">
+      <h2 id="mt"></h2><p id="mtag"></p>
+      <button type="button" id="mclose">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

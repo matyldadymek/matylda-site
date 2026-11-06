@@ -1,0 +1,22 @@
+# Your video sections, in the order they appear in the menu.
+# To add a section: add a block here, then create videos/<id>.yml
+
+- id: fiction
+  title: Fiction
+  description: Shorts, features, teasers and music videos
+
+- id: documentary
+  title: Documentary
+  description: Portraits, music and history for the big screen
+
+- id: broadcast
+  title: Broadcast & streaming
+  description: Sport and factual for TV and platforms
+
+- id: social-media
+  title: Social media
+  description: Short-form for the smallest screens
+
+- id: motion-graphics
+  title: Motion graphics
+  description: Titles, animation and After Effects work

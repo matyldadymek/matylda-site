@@ -1,0 +1,206 @@
+# Settings for the Pages CMS editing dashboard (https://app.pagescms.org).
+media:
+  input: images
+  output: images
+  categories: [image]
+
+content:
+  - name: fiction
+    label: "Films – Fiction"
+    type: file
+    path: content/videos/fiction.yml
+    format: yaml
+    list: true
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: tagline
+        label: Short description (shown in the pop-up)
+        type: string
+      - name: link
+        label: Video link (Vimeo or YouTube plays on your site; anything else opens in a new tab)
+        type: string
+      - name: featured
+        label: Homepage position (1 = first; leave empty to keep it off the homepage)
+        type: number
+        options:
+          min: 1
+          max: 30
+      - name: corner
+        label: Colour triangle corner (leave empty for random)
+        type: select
+        options:
+          values: [top-left, top-right, bottom-left, bottom-right]
+      - name: image
+        label: Own thumbnail (optional; otherwise taken from Vimeo/YouTube)
+        type: image
+  - name: documentary
+    label: "Films – Documentary"
+    type: file
+    path: content/videos/documentary.yml
+    format: yaml
+    list: true
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: tagline
+        label: Short description (shown in the pop-up)
+        type: string
+      - name: link
+        label: Video link (Vimeo or YouTube plays on your site; anything else opens in a new tab)
+        type: string
+      - name: featured
+        label: Homepage position (1 = first; leave empty to keep it off the homepage)
+        type: number
+        options:
+          min: 1
+          max: 30
+      - name: corner
+        label: Colour triangle corner (leave empty for random)
+        type: select
+        options:
+          values: [top-left, top-right, bottom-left, bottom-right]
+      - name: image
+        label: Own thumbnail (optional; otherwise taken from Vimeo/YouTube)
+        type: image
+  - name: broadcast
+    label: "Films – Broadcast & streaming"
+    type: file
+    path: content/videos/broadcast.yml
+    format: yaml
+    list: true
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: tagline
+        label: Short description (shown in the pop-up)
+        type: string
+      - name: link
+        label: Video link (Vimeo or YouTube plays on your site; anything else opens in a new tab)
+        type: string
+      - name: featured
+        label: Homepage position (1 = first; leave empty to keep it off the homepage)
+        type: number
+        options:
+          min: 1
+          max: 30
+      - name: corner
+        label: Colour triangle corner (leave empty for random)
+        type: select
+        options:
+          values: [top-left, top-right, bottom-left, bottom-right]
+      - name: image
+        label: Own thumbnail (optional; otherwise taken from Vimeo/YouTube)
+        type: image
+  - name: social-media
+    label: "Films – Social media"
+    type: file
+    path: content/videos/social-media.yml
+    format: yaml
+    list: true
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: tagline
+        label: Short description (shown in the pop-up)
+        type: string
+      - name: link
+        label: Video link (Vimeo or YouTube plays on your site; anything else opens in a new tab)
+        type: string
+      - name: featured
+        label: Homepage position (1 = first; leave empty to keep it off the homepage)
+        type: number
+        options:
+          min: 1
+          max: 30
+      - name: corner
+        label: Colour triangle corner (leave empty for random)
+        type: select
+        options:
+          values: [top-left, top-right, bottom-left, bottom-right]
+      - name: image
+        label: Own thumbnail (optional; otherwise taken from Vimeo/YouTube)
+        type: image
+  - name: motion-graphics
+    label: "Films – Motion graphics"
+    type: file
+    path: content/videos/motion-graphics.yml
+    format: yaml
+    list: true
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: tagline
+        label: Short description (shown in the pop-up)
+        type: string
+      - name: link
+        label: Video link (Vimeo or YouTube plays on your site; anything else opens in a new tab)
+        type: string
+      - name: featured
+        label: Homepage position (1 = first; leave empty to keep it off the homepage)
+        type: number
+        options:
+          min: 1
+          max: 30
+      - name: corner
+        label: Colour triangle corner (leave empty for random)
+        type: select
+        options:
+          values: [top-left, top-right, bottom-left, bottom-right]
+      - name: image
+        label: Own thumbnail (optional; otherwise taken from Vimeo/YouTube)
+        type: image
+  - name: categories
+    label: Sections (order of the Work filters)
+    type: file
+    path: content/categories.yml
+    format: yaml
+    list: true
+    fields:
+      - name: id
+        label: File name (e.g. fiction – must match content/videos/<name>.yml)
+        type: string
+      - name: title
+        label: Title
+        type: string
+      - name: description
+        label: Description
+        type: string
+  - name: site
+    label: Contact page
+    type: file
+    path: content/site.yml
+    format: yaml
+    fields:
+      - name: name
+        label: Your name
+        type: string
+      - name: contact
+        label: Contact page
+        type: object
+        fields:
+          - name: headline
+            type: string
+          - name: text
+            type: text
+          - name: email
+            type: string
+          - name: links
+            label: Social links
+            type: object
+            list: true
+            fields:
+              - name: name
+                type: string
+              - name: url
+                type: string
