@@ -43,3 +43,15 @@ Films without a colour get one automatically, arranged so neighbours never match
 ## Design
 
 Colours, font and spacing are in `style.css` (the palette is at the top). Behaviour is in `app.js`.
+
+## Still to do (as of 6 Nov 2026)
+
+- [ ] Upload a thumbnail for each film (`images/` folder + `image:` line), 16:9, about 1280×720.
+- [ ] Screenshots of the websites for *Everything I Ever Wanted…* and *My Friend the Polish Girl* (shown in their pop-ups).
+- [ ] BEASTS: test the Vimeo mature-content check in the pop-up (private window, logged out). If it gets stuck, switch it to a "Watch on Vimeo" button.
+- [ ] Films with no video link yet: *Stina Ekblad and the Music*, *Rencontre(s) avec Michel Déon*, *Święta Lipka*, *ON/HE*.
+- [ ] Move Dropbox / Wix films to Vimeo: *Fin d'Été*, *Födelsedag*, *BBC – An overall look*, *Święta w Warszawie*, *Expresso*.
+- [ ] *Przyjdź do mnie*: replace the private Vimeo dashboard link with the public one.
+- [ ] *Stats and emotions*: same Vimeo link as *Olympic Confessions* – check.
+- [ ] Try the editing dashboard at app.pagescms.org.
+- [ ] When happy: point matyldadymek.co.uk to this site, check it, then cancel Weebly (keep the domain).
