@@ -45,12 +45,9 @@ async function thumbnail(v){
 function corner(v){ return CORNERS[v.corner] || Object.values(CORNERS)[hash('c' + v.title) % 4]; }
 function tile(v, k){
   const c = FRAMES.includes('--' + v.colour) ? '--' + v.colour : FRAMES[k % FRAMES.length];
-  const play = embedUrl(v.link);
-  const tag = play || !v.link ? 'button type="button"' : `a href="${esc(v.link)}" target="_blank" rel="noopener"`;
-  const end = play || !v.link ? 'button' : 'a';
-  return `<${tag} class="item ${corner(v)}" data-i="${ALL.indexOf(v)}" style="--tint:var(${c})" aria-label="${esc(v.title)}">
+  return `<button type="button" class="item ${corner(v)}" data-i="${ALL.indexOf(v)}" style="--tint:var(${c})" aria-label="${esc(v.title)}">
     <span class="frame"><span class="img"></span><span class="tint"></span><span class="ov"><span class="t">${esc(v.title)}</span></span></span>
-    <span class="tb">${esc(v.title)}</span></${end}>`;
+    <span class="tb">${esc(v.title)}</span></button>`;
 }
 function grid(list){
   setTimeout(() => main.querySelectorAll('.item').forEach(async el => {
@@ -89,17 +86,29 @@ function render(){
 /* ---- pop-up player ---- */
 const modal = document.getElementById('modal'), screen = document.getElementById('screen');
 let last;
-main.addEventListener('click', e => {
+const go = document.getElementById('mgo');
+main.addEventListener('click', async e => {
   const b = e.target.closest('button.item'); if (!b) return;
-  const v = ALL[b.dataset.i], src = embedUrl(v.link); if (!src) return;
+  const v = ALL[b.dataset.i]; if (!v.link) return;
+  const src = embedUrl(v.link);
   last = b;
-  screen.innerHTML = `<iframe src="${src}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="${esc(v.title)}"></iframe>`;
+  if (src){
+    /* Vimeo / YouTube: play the film here */
+    screen.innerHTML = `<iframe src="${src}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="${esc(v.title)}"></iframe>`;
+    go.hidden = true;
+  } else {
+    /* any other site: show the film's image, with a button to open the site */
+    const img = await thumbnail(v);
+    screen.innerHTML = img ? `<img src="${esc(img)}" alt="">` : '';
+    go.href = v.link; go.hidden = false;
+  }
   document.getElementById('mt').textContent = v.title;
   document.getElementById('mtag').textContent = v.tagline || '';
   const tint = b.style.getPropertyValue('--tint');                 /* same colour as this film's triangle */
   const light = ['--green','--lime','--rose','--mauve'].some(c => tint.includes(c + ')'));
   const bar = document.querySelector('.pinfo');
   bar.style.setProperty('--bar', tint);
+  screen.style.background = screen.innerHTML ? '#000' : tint;       /* no image yet: fill with the film's colour */
   bar.style.setProperty('--bartext', light ? 'var(--ink)' : 'var(--bg)');
   modal.hidden = false;
   document.getElementById('mclose').focus();
