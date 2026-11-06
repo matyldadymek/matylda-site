@@ -44,7 +44,7 @@ async function thumbnail(v){
 /* ---- grid ---- */
 function corner(v){ return CORNERS[v.corner] || Object.values(CORNERS)[hash('c' + v.title) % 4]; }
 function tile(v, k){
-  const c = FRAMES[k % FRAMES.length];
+  const c = FRAMES.includes('--' + v.colour) ? '--' + v.colour : FRAMES[k % FRAMES.length];
   const play = embedUrl(v.link);
   const tag = play || !v.link ? 'button type="button"' : `a href="${esc(v.link)}" target="_blank" rel="noopener"`;
   const end = play || !v.link ? 'button' : 'a';
