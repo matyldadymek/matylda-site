@@ -96,6 +96,11 @@ main.addEventListener('click', e => {
   screen.innerHTML = `<iframe src="${src}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="${esc(v.title)}"></iframe>`;
   document.getElementById('mt').textContent = v.title;
   document.getElementById('mtag').textContent = v.tagline || '';
+  const tint = b.style.getPropertyValue('--tint');                 /* same colour as this film's triangle */
+  const light = ['--green','--lime','--rose','--mauve'].some(c => tint.includes(c + ')'));
+  const bar = document.querySelector('.pinfo');
+  bar.style.setProperty('--bar', tint);
+  bar.style.setProperty('--bartext', light ? 'var(--ink)' : 'var(--bg)');
   modal.hidden = false;
   document.getElementById('mclose').focus();
 });
