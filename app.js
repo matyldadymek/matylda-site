@@ -119,6 +119,24 @@ modal.addEventListener('click', e => { if (e.target === modal) close(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.hidden) close(); });
 window.addEventListener('hashchange', () => { render(); window.scrollTo(0,0); });
 
+/* ---- name: each letter takes a random palette colour when the mouse passes over it ---- */
+(function(){
+  const link = document.querySelector('.name a');
+  const text = link.textContent;
+  link.setAttribute('aria-label', text);
+  link.innerHTML = [...text].map(ch => ch === ' ' ? ' ' : `<span class="ch" aria-hidden="true">${esc(ch)}</span>`).join('');
+  link.querySelectorAll('.ch').forEach(s => {
+    let timer;
+    s.addEventListener('mouseenter', () => {
+      const pick = FRAMES.filter(c => c !== s.dataset.c);
+      s.dataset.c = pick[Math.floor(Math.random() * pick.length)];
+      s.style.color = `var(${s.dataset.c})`;
+      clearTimeout(timer);
+      timer = setTimeout(() => { s.style.color = ''; s.dataset.c = ''; }, 1400);   /* fades back to green */
+    });
+  });
+})();
+
 /* ---- start ---- */
 (async () => {
   try {

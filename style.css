@@ -26,6 +26,7 @@ a{color:inherit}
 header{text-align:center;padding-block:48px 28px}
 .name{font-size:clamp(24px,3.4vw,36px);font-weight:400;letter-spacing:.32em;text-transform:uppercase;margin:0;color:var(--forest)}
 .name a{text-decoration:none}
+.name .ch{display:inline-block;transition:color .5s ease}
 nav ul,.filters,.social{list-style:none;margin:0;padding:0;display:flex;justify-content:center;flex-wrap:wrap}
 nav ul{margin-top:22px;gap:6px 26px}
 nav a,.social a{text-decoration:none;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding-block:4px;border-bottom:1px solid transparent}
