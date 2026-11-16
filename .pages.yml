@@ -132,7 +132,7 @@ content:
         label: Own thumbnail (optional; otherwise taken from Vimeo/YouTube)
         type: image
   - name: social-media
-    label: "Films – Social media"
+    label: "Films – Short form"
     type: file
     path: content/videos/social-media.yml
     format: yaml
