@@ -30,6 +30,8 @@ Each film looks like this:
 
 Rules: keep the indentation, put a title in quotes if it contains a colon, and start every film with `- title:`. GitHub keeps every earlier version, so any mistake can be undone.
 
+Tip: when you replace a thumbnail, upload it under a **new file name** (e.g. `beasts-3.jpg`) and update the `image:` line. Browsers keep old images for up to 10 minutes, and a new name makes everyone see the new one straight away.
+
 ## Triangle colours
 
 | name | colour | name | colour |
