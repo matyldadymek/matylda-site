@@ -55,6 +55,6 @@ Colours, font and spacing are in `style.css` (the palette is at the top). Behavi
 - [ ] *Przyjdź do mnie*: replace the private Vimeo dashboard link with the public one.
 - [ ] *Stats and emotions*: same Vimeo link as *Olympic Confessions* – check.
 - [ ] Vimeo embed setting → "Anywhere" still needed for: *Berlin vs Kiel* (Handball battle), *MotoGP* (A new season of noise!), *Födelsedag/Birthday*, *Sowa/Owl*.
-- [ ] *Inside Out* removed for now (password-protected on someone else's Vimeo, vimeo.com/42556875). Add back when you have an open link. Its thumbnail is still in images/inside-out.jpg if needed.
+- [ ] *Inside Out* removed for now (password-protected on someone else's Vimeo, vimeo.com/42556875). Add back when you have an open link.
 - [ ] Try the editing dashboard at app.pagescms.org.
 - [ ] When happy: point matyldadymek.co.uk to this site, check it, then cancel Weebly (keep the domain).
