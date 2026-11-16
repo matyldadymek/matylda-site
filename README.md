@@ -48,12 +48,35 @@ Films without a colour get one automatically, arranged so neighbours never match
 
 Colours, font and spacing are in `style.css` (the palette is at the top). Behaviour is in `app.js`.
 
-## Still to do (as of 16 Nov 2026)
+## Still to do (plan for 17 Nov 2026)
 
-- [ ] Go through every film's **title and short description** (shown in the pop-up), section by section.
-- [ ] Films with no video link: *Stina Ekblad and the Music*, *Rencontre(s) avec Michel Déon*, *Święta Lipka* – find links, or remove them.
+**1. Text: titles and descriptions**
+- [ ] Go through every film, section by section. The title shows on the thumbnail; the short description shows only in the pop-up.
+  - [ ] Fiction (12 films)
+  - [ ] Documentary (12 films)
+  - [ ] Broadcast & streaming (10 films)
+  - [ ] Short form (10 films)
+  - [ ] Motion graphics (3 films)
+- [ ] Make the style consistent: brand prefixes ("Eurosport –", "WBD Sports –"), capitals, and descriptions that just say "Instagram".
+- [ ] The text on the contact page.
+
+**2. Order of films in each section**
+- [ ] Decide the order inside each section (top-left first). The **All** filter on the Work page follows the same order, section by section.
+- [ ] Check the homepage nine still feel right afterwards.
+
+**3. Mobile site**
+- [ ] On your phone, check: homepage, Work filters (swipe sideways), a few pop-ups (Vimeo, YouTube, BEASTS, a website film), contact page.
+- [ ] Screenshot anything that looks off.
+
+**4. Films that still need something**
+- [ ] *Rencontre(s) avec Michel Déon* and *Święta Lipka*: no video link – find one or remove them.
 - [ ] *Stats and emotions* (Motion graphics) uses the same Vimeo link as *Eurosport – Olympic Confessions* – check.
-- [ ] *Inside Out* removed for now (password-protected on someone else's Vimeo, vimeo.com/42556875). Add back when you have an open link.
-- [ ] *French cycling star* thumbnail looks like a press photo – check you may use it, or swap for a still from your edit.
-- [ ] Try the editing dashboard at app.pagescms.org.
-- [ ] When happy: point matyldadymek.co.uk to this site, check it, then cancel Weebly (keep the domain).
+- [ ] *Inside Out* is off the site until you have an open link (vimeo.com/42556875 is password-protected on someone else's account).
+- [ ] *French cycling star*: the thumbnail looks like a press photo – check you may use it, or use a still from your edit.
+
+**5. Finishing touches**
+- [ ] A small icon for the browser tab.
+- [ ] The preview picture and text that appear when someone shares your link (WhatsApp, LinkedIn, email).
+
+**6. Go live**
+- [ ] Point matyldadymek.co.uk to this site, check everything on the real address, then cancel Weebly (keep the domain).
