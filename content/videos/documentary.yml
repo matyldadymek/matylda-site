@@ -1,8 +1,8 @@
 - title: Go behind the scenes of a Detroit art project
   tagline: 13 min
   link: https://www.youtube.com/watch?v=vCFu8kaSfqA
-  corner: bottom-right
   featured: 7
+  corner: bottom-right
   image: images/go-behind-the-scenes-of-a-detroit-art-project.jpg
 - title: VICE – Sounds of Concrete
   tagline: For Comme des Garçons
@@ -18,15 +18,15 @@
 - title: Herbert Blomstedt
   tagline: He's 85 years old and he won't stop
   link: https://vimeo.com/66496970
+  corner: top-left
 - title: Chopin's Warsaw
   tagline: This is where he came from
   link: https://www.youtube.com/watch?v=s2_coVXj9bI
 - title: Stockholm Syndrome Ensemble
   tagline: Innovation in chamber music
   link: https://vimeo.com/132446689
-  colour: mauve
   featured: 6
-  fill: true
+  colour: mauve
   image: images/stockholm-syndrome-ensemble.jpg
 - title: The Royal Family
   tagline: What did they get up to?
