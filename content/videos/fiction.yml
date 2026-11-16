@@ -8,7 +8,8 @@
 - title: My Friend the Polish Girl
   tagline: Teaser
   link: http://ewaandmateusz.com/myfriendthepolishgirl/
-  colour: mauve
+  corner: top-left
+  colour: lime
   featured: 4
   image: images/my-friend-the-polish-girl.jpg
 
