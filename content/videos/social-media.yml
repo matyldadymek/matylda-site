@@ -1,43 +1,52 @@
 - title: French cycling star
   tagline: Instagram
   link: https://www.instagram.com/p/DZSuvwIILUv/
+  image: images/french-cycling-star.jpg
 
 - title: Whisky stories
   tagline: Instagram
   link: https://www.instagram.com/p/CzEi09gstNI/
+  image: images/whisky-stories.jpg
   featured: 5
 
 - title: Mixing creativity and ice-cream toppings
   tagline: Branded content
   link: https://www.youtube.com/watch?v=9qRgkbWZbxQ
+  image: images/mixing-creativity-and-ice-cream-toppings.jpg
   featured: 6
 
 - title: Great Day
   tagline: A day at the Philharmonic
   link: https://vimeo.com/315217789
+  image: images/great-day.jpg
   featured: 7
 
 - title: The sports wear conference
   tagline: Event film
   link: https://vimeo.com/322269280
+  image: images/the-sports-wear-conference.jpg
 
 - title: Dancing stories
   tagline: Instagram
   link: https://www.instagram.com/tv/CAdHJ3wgbTo/
+  image: images/dancing-stories.jpg
 
 - title: ON/HE
   tagline: An upcoming feature
   link: ""
+  image: images/on-he.jpg
   # CHECK: only a still image on your current site. Video link?
 
 - title: Święta w Warszawie
   tagline: No place like Christmas in Warsaw
   link: https://www.dropbox.com/s/r34qt3e8zalvrzk/polsat%20wersja%20na%20www.mov?dl=0
+  image: images/swieta-w-warszawie.jpg
   # CHECK: Dropbox file. Better to upload to Vimeo.
 
 - title: Expresso
   tagline: Promoting post-production
   link: https://www.dropbox.com/s/ev1fn44yjj6ubi4/expresso.mov?dl=0
+  image: images/expresso.jpg
   # CHECK: Dropbox file. Better to upload to Vimeo.
 
 - title: Żołądkowa

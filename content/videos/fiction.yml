@@ -1,50 +1,61 @@
 - title: Everything I Ever Wanted to Tell My Daughter About Men
   tagline: Feature
   link: https://telleverything.org/movie
+  image: images/everything-i-ever-wanted-to-tell-my-daughter-about.jpg
   featured: 9
 
 - title: My Friend the Polish Girl
   tagline: Teaser
   link: http://ewaandmateusz.com/myfriendthepolishgirl/
+  image: images/my-friend-the-polish-girl.jpg
   featured: 2
 
 - title: BEASTS
   tagline: Within us
   link: https://vimeo.com/86489030
+  image: images/beasts.jpg
   featured: 8
 
 - title: The Blood Bride
   tagline: Teaser
   link: https://vimeo.com/236068516
+  image: images/the-blood-bride.jpg
 
 - title: Nothing Important
   tagline: A lonely intrusion
   link: https://vimeo.com/237752671
+  image: images/nothing-important.jpg
 
 - title: Expire Part I
   tagline: Music video
   link: https://www.youtube.com/watch?v=AFrHCZp8X_8
+  image: images/expire-part-i.jpg
 
 - title: Prick Thy Neighbour
   tagline: Quirky love
   link: https://vimeo.com/127040966
+  image: images/prick-thy-neighbour.jpg
 
 - title: Via Rupta
   tagline: Broken souls
   link: https://vimeo.com/139957205
+  image: images/via-rupta.jpg
 
 - title: Fin d’Été
   tagline: Remembering the good times
   link: http://samgordon.wix.com/fin-dete
+  image: images/fin-dete.jpg
   # CHECK: old Wix page, may disappear. Better to upload to Vimeo.
 
 - title: Silence Radio
   tagline: Difficult choices
   link: https://vimeo.com/192494313
+  image: images/silence-radio.jpg
 
 - title: Födelsedag
   tagline: Loving isn't easy
   link: https://www.dropbox.com/s/9k4gdxg05pt9y52/fodelsedag.mov?dl=0
+  image: images/fodelsedag.jpg
   # CHECK: Dropbox file. Better to upload to Vimeo.
 
 - title: Przyjdź do mnie
