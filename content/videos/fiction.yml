@@ -1,74 +1,58 @@
 - title: Everything I Ever Wanted to Tell My Daughter About Men
   tagline: Feature
   link: https://telleverything.org/movie
-  corner: bottom-left
   featured: 9
+  corner: bottom-left
   image: images/everything-i-ever-wanted-to-tell-my-daughter-about.jpg
-
 - title: My Friend the Polish Girl
   tagline: Teaser
   link: http://ewaandmateusz.com/myfriendthepolishgirl/
+  featured: 4
   corner: top-left
   colour: lime
-  featured: 4
   image: images/my-friend-the-polish-girl.jpg
-
 - title: BEASTS
   tagline: Within us
   link: https://vimeo.com/86489030
-  colour: mauve
   featured: 1
-  mature: true
+  colour: mauve
   image: images/beasts-2.jpg
-
 - title: The Blood Bride
   tagline: Teaser
   link: https://vimeo.com/237604812
+  corner: top-right
   image: images/the-blood-bride.jpg
-
 - title: Nothing Important
   tagline: A lonely intrusion
   link: https://vimeo.com/237752671
   image: images/nothing-important.jpg
-
 - title: Expire Part I
   tagline: Music video
   link: https://www.youtube.com/watch?v=AFrHCZp8X_8
   image: images/expire-part-i.jpg
-
 - title: Prick Thy Neighbour
   tagline: Quirky love
   link: https://vimeo.com/127040966
   image: images/prick-thy-neighbour.jpg
-
 - title: Via Rupta
   tagline: Broken souls
   link: https://vimeo.com/139957205
   image: images/via-rupta.jpg
-
 - title: Fin d’Été
   tagline: Remembering the good times
   link: http://samgordon.wix.com/fin-dete
   image: images/fin-dete.jpg
-  # CHECK: old Wix page, may disappear. Better to upload to Vimeo.
-
 - title: Silence Radio
   tagline: Difficult choices
   link: https://vimeo.com/192494313
   image: images/silence-radio.jpg
-
 - title: Födelsedag
   tagline: Loving isn't easy
   link: https://vimeo.com/65747222
   image: images/fodelsedag.jpg
-
 - title: Przyjdź do mnie
   tagline: Longing for someone
   link: https://vimeo.com/manage/videos/579444557
-  # CHECK: this is your private Vimeo dashboard link. Visitors can't open it.
-  # Use the public link instead: probably https://vimeo.com/579444557
-
 - title: Sowa / Owl
   tagline: Łódź Film School graduation film
   link: https://vimeo.com/37729199
-  image: https://i.vimeocdn.com/video/259319299-24872c6fe3d89575416bad090eab85cd58adf581d77762edfecfd3f3c6f19b44-d_1280
