@@ -1,8 +1,9 @@
 - title: Go behind the scenes of a Detroit art project
   tagline: 13 min
   link: https://www.youtube.com/watch?v=vCFu8kaSfqA
+  corner: bottom-right
+  featured: 7
   image: images/go-behind-the-scenes-of-a-detroit-art-project.jpg
-  featured: 1
 - title: VICE – Sounds of Concrete
   tagline: For Comme des Garçons
   link: https://www.84paris.com/fr/work/comme-des-garcons-sounds-of-concrete-fr
@@ -23,6 +24,7 @@
 - title: Stockholm Syndrome Ensemble
   tagline: Innovation in chamber music
   link: https://vimeo.com/132446689
+  featured: 6
   fill: true
   image: images/stockholm-syndrome-ensemble.jpg
 - title: The Royal Family

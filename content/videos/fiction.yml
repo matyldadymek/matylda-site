@@ -1,21 +1,24 @@
 - title: Everything I Ever Wanted to Tell My Daughter About Men
   tagline: Feature
   link: https://telleverything.org/movie
-  image: images/everything-i-ever-wanted-to-tell-my-daughter-about.jpg
+  corner: bottom-left
   featured: 9
+  image: images/everything-i-ever-wanted-to-tell-my-daughter-about.jpg
 
 - title: My Friend the Polish Girl
   tagline: Teaser
   link: http://ewaandmateusz.com/myfriendthepolishgirl/
+  colour: mauve
+  featured: 4
   image: images/my-friend-the-polish-girl.jpg
-  featured: 2
 
 - title: BEASTS
   tagline: Within us
   link: https://vimeo.com/86489030
+  colour: mauve
+  featured: 1
   mature: true
   image: images/beasts.jpg
-  featured: 8
 
 - title: The Blood Bride
   tagline: Teaser

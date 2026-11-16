@@ -6,20 +6,20 @@
 - title: Whisky stories
   tagline: Instagram
   link: https://www.instagram.com/p/CzEi09gstNI/
+  featured: 3
   image: images/whisky-stories.jpg
-  featured: 5
 
 - title: Mixing creativity and ice-cream toppings
   tagline: Branded content
   link: https://www.youtube.com/watch?v=9qRgkbWZbxQ
+  featured: 2
   image: images/mixing-creativity-and-ice-cream-toppings.jpg
-  featured: 6
 
 - title: Great Day
   tagline: A day at the Philharmonic
   link: https://vimeo.com/315217789
+  featured: 5
   image: images/great-day.jpg
-  featured: 7
 
 - title: The sports wear conference
   tagline: Event film
