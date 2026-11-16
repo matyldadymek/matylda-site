@@ -52,7 +52,6 @@ Colours, font and spacing are in `style.css` (the palette is at the top). Behavi
 
 - [ ] Go through every film's **title and short description** (shown in the pop-up), section by section.
 - [ ] Films with no video link: *Stina Ekblad and the Music*, *Rencontre(s) avec Michel Déon*, *Święta Lipka* – find links, or remove them.
-- [ ] *Expresso* still links to Dropbox – upload to Vimeo/YouTube and swap the link.
 - [ ] *Stats and emotions* (Motion graphics) uses the same Vimeo link as *Eurosport – Olympic Confessions* – check.
 - [ ] *Inside Out* removed for now (password-protected on someone else's Vimeo, vimeo.com/42556875). Add back when you have an open link.
 - [ ] *French cycling star* thumbnail looks like a press photo – check you may use it, or swap for a still from your edit.
