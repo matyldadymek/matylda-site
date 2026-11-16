@@ -61,8 +61,21 @@ async function videoRatio(u){
 
 /* ---- grid ---- */
 function corner(v){ return CORNERS[v.corner] || Object.values(CORNERS)[hash('c' + v.title) % 4]; }
-function tile(v, k){
-  const c = FRAMES.includes('--' + v.colour) ? '--' + v.colour : FRAMES[k % FRAMES.length];
+/* Colours: a film's own `colour` wins. The others are picked so they never match the three tiles before them
+   (that covers the tile beside it and the one above it, with 2 or 3 columns), and they leave the colours you chose to your chosen films. */
+function colours(list){
+  const own = list.map(v => FRAMES.includes('--' + v.colour) ? '--' + v.colour : null);
+  const out = [];
+  list.forEach((v, k) => {
+    if (own[k]) { out.push(own[k]); return; }
+    const near = [...out.slice(Math.max(0, k - 3)), ...own.slice(k + 1, k + 4), ...own.filter(Boolean)];   /* chosen colours stay special */
+    let c = FRAMES[k % FRAMES.length];
+    for (let n = 0; n < FRAMES.length && near.includes(c); n++) c = FRAMES[(k + n + 1) % FRAMES.length];
+    out.push(c);
+  });
+  return out;
+}
+function tile(v, k, c){
   return `<button type="button" class="item ${corner(v)}" data-i="${ALL.indexOf(v)}" style="--tint:var(${c})" aria-label="${esc(v.title)}">
     <span class="frame"><span class="img"></span><span class="tint"></span><span class="ov"><span class="t">${esc(v.title)}</span></span></span>
     <span class="tb">${esc(v.title)}</span></button>`;
@@ -73,7 +86,8 @@ function grid(list){
     if (src) el.querySelector('.img').style.backgroundImage = `url("${src}")`;
   }));
   setTimeout(watchCentre);
-  return `<div class="grid">${list.map(tile).join('')}</div>`;
+  const cs = colours(list);
+  return `<div class="grid">${list.map((v, k) => tile(v, k, cs[k])).join('')}</div>`;
 }
 
 /* Phones have no hover: the film nearest the middle of the screen slides its triangle away and shows its title. */
