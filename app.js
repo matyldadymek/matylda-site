@@ -29,12 +29,18 @@ const thumbCache = {};
 async function thumbnail(v){
   if (v.image) return v.image;
   const u = v.link || '';
-  const y = youtubeId(u); if (y) return `https://i.ytimg.com/vi/${y}/hqdefault.jpg`;
+  const y = youtubeId(u);
+  if (y){
+    /* full-HD frame when YouTube has one (1280x720), otherwise the standard one */
+    const hd = `https://i.ytimg.com/vi/${y}/maxresdefault.jpg`;
+    const ok = await new Promise(res => { const im = new Image(); im.onload = () => res(im.naturalWidth > 200); im.onerror = () => res(false); im.src = hd; });
+    return ok ? hd : `https://i.ytimg.com/vi/${y}/hqdefault.jpg`;
+  }
   const id = vimeoId(u);
   if (id){
     if (thumbCache[id]) return thumbCache[id];
     try {
-      const r = await fetch(`https://vimeo.com/api/oembed.json?url=${encodeURIComponent('https://vimeo.com/' + id)}&width=960`);
+      const r = await fetch(`https://vimeo.com/api/oembed.json?url=${encodeURIComponent('https://vimeo.com/' + id)}&width=1920`);
       if (r.ok){ const j = await r.json(); return thumbCache[id] = j.thumbnail_url; }
     } catch(e){}
   }
