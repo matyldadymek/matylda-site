@@ -63,10 +63,6 @@
   # CHECK: this is your private Vimeo dashboard link. Visitors can't open it.
   # Use the public link instead: probably https://vimeo.com/579444557
 
-- title: Inside Out
-  tagline: The fear of the outside
-  link: https://vimeo.com/42556875
-
 - title: Sowa / Owl
   tagline: Łódź Film School graduation film
   link: https://vimeo.com/37729199
