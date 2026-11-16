@@ -18,7 +18,7 @@
 
 - title: The Blood Bride
   tagline: Teaser
-  link: https://vimeo.com/236068516
+  link: https://vimeo.com/237604812
   image: images/the-blood-bride.jpg
 
 - title: Nothing Important
@@ -54,9 +54,8 @@
 
 - title: Födelsedag
   tagline: Loving isn't easy
-  link: https://www.dropbox.com/s/9k4gdxg05pt9y52/fodelsedag.mov?dl=0
-  image: images/fodelsedag.jpg
-  # CHECK: Dropbox file. Better to upload to Vimeo.
+  link: https://vimeo.com/65747222
+  image: https://i.vimeocdn.com/video/437887193-96b0957c6fdc9189af319e22ffb7f95357a1468b8ecd58968e022e276513a0d8-d_1280
 
 - title: Przyjdź do mnie
   tagline: Longing for someone
@@ -67,3 +66,8 @@
 - title: Inside Out
   tagline: The fear of the outside
   link: https://vimeo.com/42556875
+
+- title: Sowa / Owl
+  tagline: Łódź Film School graduation film
+  link: https://vimeo.com/37729199
+  image: https://i.vimeocdn.com/video/259319299-24872c6fe3d89575416bad090eab85cd58adf581d77762edfecfd3f3c6f19b44-d_1280
