@@ -24,6 +24,7 @@ Each film looks like this:
   corner: bottom-right                # optional: top-left, top-right, bottom-left, bottom-right
   colour: rose                        # optional: green, lime, rose, mauve, sage, olive, clay, plum, forest, ink
   image: images/silence-radio.jpg     # optional: your own thumbnail
+  fill: true                          # optional: crop black bars baked into an old 4:3 video
 ```
 
 Rules: keep the indentation, put a title in quotes if it contains a colon, and start every film with `- title:`. GitHub keeps every earlier version, so any mistake can be undone.

@@ -38,6 +38,9 @@ content:
         type: select
         options:
           values: [green, lime, rose, mauve, sage, olive, clay, plum, forest, ink]
+      - name: fill
+        label: Fill the player (crops black bars baked into old 4:3 videos)
+        type: boolean
       - name: image
         label: Own thumbnail (optional; otherwise taken from Vimeo/YouTube)
         type: image
@@ -74,6 +77,9 @@ content:
         type: select
         options:
           values: [green, lime, rose, mauve, sage, olive, clay, plum, forest, ink]
+      - name: fill
+        label: Fill the player (crops black bars baked into old 4:3 videos)
+        type: boolean
       - name: image
         label: Own thumbnail (optional; otherwise taken from Vimeo/YouTube)
         type: image
@@ -110,6 +116,9 @@ content:
         type: select
         options:
           values: [green, lime, rose, mauve, sage, olive, clay, plum, forest, ink]
+      - name: fill
+        label: Fill the player (crops black bars baked into old 4:3 videos)
+        type: boolean
       - name: image
         label: Own thumbnail (optional; otherwise taken from Vimeo/YouTube)
         type: image
@@ -146,6 +155,9 @@ content:
         type: select
         options:
           values: [green, lime, rose, mauve, sage, olive, clay, plum, forest, ink]
+      - name: fill
+        label: Fill the player (crops black bars baked into old 4:3 videos)
+        type: boolean
       - name: image
         label: Own thumbnail (optional; otherwise taken from Vimeo/YouTube)
         type: image
@@ -182,6 +194,9 @@ content:
         type: select
         options:
           values: [green, lime, rose, mauve, sage, olive, clay, plum, forest, ink]
+      - name: fill
+        label: Fill the player (crops black bars baked into old 4:3 videos)
+        type: boolean
       - name: image
         label: Own thumbnail (optional; otherwise taken from Vimeo/YouTube)
         type: image

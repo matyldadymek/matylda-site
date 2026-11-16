@@ -47,6 +47,18 @@ async function thumbnail(v){
   return null;
 }
 
+/* the shape of a video (width / height); Vimeo tells us, YouTube is 16:9 */
+const ratioCache = {};
+async function videoRatio(u){
+  const id = vimeoId(u || ''); if (!id) return 16/9;
+  if (ratioCache[id]) return ratioCache[id];
+  try {
+    const r = await fetch(`https://vimeo.com/api/oembed.json?url=${encodeURIComponent('https://vimeo.com/' + id)}`);
+    if (r.ok){ const j = await r.json(); if (j.width && j.height) return ratioCache[id] = j.width / j.height; }
+  } catch(e){}
+  return 16/9;
+}
+
 /* ---- grid ---- */
 function corner(v){ return CORNERS[v.corner] || Object.values(CORNERS)[hash('c' + v.title) % 4]; }
 function tile(v, k){
@@ -110,9 +122,18 @@ main.addEventListener('click', async e => {
   const v = ALL[b.dataset.i]; if (!v.link) return;
   const src = embedUrl(v.link);
   last = b;
+  const panel = document.querySelector('.panel');
+  let ratio = 16/9;
   if (src){
-    /* Vimeo / YouTube: play the film here */
+    /* Vimeo / YouTube: play the film here, in a frame shaped like the video itself */
+    const r = await videoRatio(v.link);
     screen.innerHTML = `<iframe src="${src}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="${esc(v.title)}"></iframe>`;
+    const f = screen.firstChild;
+    if (v.fill && r < 16/9){
+      /* fill: keep a 16:9 frame and zoom past black bars baked into an old 4:3 file */
+      const h = (16/9) / r * 100;
+      f.style.height = h + '%'; f.style.top = -(h - 100) / 2 + '%';
+    } else ratio = r;
     go.hidden = true;
   } else {
     /* any other site: show the film's image, with a button to open the site */
@@ -122,6 +143,8 @@ main.addEventListener('click', async e => {
   }
   document.getElementById('mt').textContent = v.title;
   document.getElementById('mtag').textContent = v.tagline || '';
+  screen.style.aspectRatio = ratio;
+  panel.style.maxWidth = `calc(82vh * ${ratio})`;   /* tall videos never run off the screen */
   const tint = b.style.getPropertyValue('--tint');                 /* same colour as this film's triangle */
   const light = ['--green','--lime','--rose','--mauve'].some(c => tint.includes(c + ')'));
   const bar = document.querySelector('.pinfo');
