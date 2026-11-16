@@ -11,7 +11,7 @@
   --bg:#FBFCF9; --fg:var(--ink); --muted:var(--olive); --rule:#DDE3D3;
   --font:"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* how strong the triangle is */
-  --tint-opacity:.9;
+  --tint-opacity:.85;
   color-scheme:light;
 }
 *{box-sizing:border-box}
