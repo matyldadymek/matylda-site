@@ -54,7 +54,19 @@ function grid(list){
     const src = await thumbnail(ALL[el.dataset.i]);
     if (src) el.querySelector('.img').style.backgroundImage = `url("${src}")`;
   }));
+  setTimeout(watchCentre);
   return `<div class="grid">${list.map(tile).join('')}</div>`;
+}
+
+/* Phones have no hover: the film nearest the middle of the screen slides its triangle away and shows its title. */
+const touch = matchMedia('(hover: none)');
+let centreObs;
+function watchCentre(){
+  centreObs && centreObs.disconnect();
+  if (!touch.matches || !('IntersectionObserver' in window)) return;
+  centreObs = new IntersectionObserver(entries => entries.forEach(e => e.target.classList.toggle('on', e.isIntersecting)),
+    { rootMargin: '-45% 0px -45% 0px' });   /* a thin band across the middle of the screen */
+  main.querySelectorAll('.item').forEach(el => centreObs.observe(el));
 }
 function filters(id){
   return `<ul class="filters">` + [['work','All'], ...CATS.map(c => [c.id, c.title])]
