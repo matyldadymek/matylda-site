@@ -172,7 +172,6 @@ main.addEventListener('click', async e => {
   document.getElementById('mtag').textContent = info;
   screen.style.aspectRatio = ratio;
   panel.style.maxWidth = `calc(82vh * ${ratio})`;   /* tall videos never run off the screen */
-  if (v.small) panel.style.maxWidth = `min(560px, calc(82vh * ${ratio}))`;   /* old low-resolution videos look sharper smaller */
   const tint = b.style.getPropertyValue('--tint');                 /* same colour as this film's triangle */
   const light = ['--green','--lime','--rose','--mauve'].some(c => tint.includes(c + ')'));
   const bar = document.querySelector('.pinfo');

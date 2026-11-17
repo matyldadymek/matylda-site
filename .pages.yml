@@ -52,9 +52,6 @@ content:
       - name: fill
         label: Fill the player (crops black bars baked into old 4:3 videos)
         type: boolean
-      - name: small
-        label: Smaller player (for old, low-quality videos)
-        type: boolean
       - name: mature
         label: Adult content (opens on Vimeo with an age check instead of playing here)
         type: boolean
@@ -107,9 +104,6 @@ content:
           values: [green, lime, rose, mauve, sage, olive, clay, plum, forest, ink]
       - name: fill
         label: Fill the player (crops black bars baked into old 4:3 videos)
-        type: boolean
-      - name: small
-        label: Smaller player (for old, low-quality videos)
         type: boolean
       - name: mature
         label: Adult content (opens on Vimeo with an age check instead of playing here)
@@ -164,9 +158,6 @@ content:
       - name: fill
         label: Fill the player (crops black bars baked into old 4:3 videos)
         type: boolean
-      - name: small
-        label: Smaller player (for old, low-quality videos)
-        type: boolean
       - name: mature
         label: Adult content (opens on Vimeo with an age check instead of playing here)
         type: boolean
@@ -220,9 +211,6 @@ content:
       - name: fill
         label: Fill the player (crops black bars baked into old 4:3 videos)
         type: boolean
-      - name: small
-        label: Smaller player (for old, low-quality videos)
-        type: boolean
       - name: mature
         label: Adult content (opens on Vimeo with an age check instead of playing here)
         type: boolean
@@ -275,9 +263,6 @@ content:
           values: [green, lime, rose, mauve, sage, olive, clay, plum, forest, ink]
       - name: fill
         label: Fill the player (crops black bars baked into old 4:3 videos)
-        type: boolean
-      - name: small
-        label: Smaller player (for old, low-quality videos)
         type: boolean
       - name: mature
         label: Adult content (opens on Vimeo with an age check instead of playing here)
