@@ -107,6 +107,8 @@ footer{text-align:center;font-size:11px;letter-spacing:.18em;text-transform:uppe
     padding-inline:max(16px, env(safe-area-inset-left,0px));-webkit-overflow-scrolling:touch}
   .filters::-webkit-scrollbar{display:none}
   .filters li{flex:none}
+  /* soft fade on the right edge hints that the row scrolls sideways */
+  .filters{-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}
   .filters a{font-size:12px;white-space:nowrap}
   /* pop-up: full width, compact bar */
   .modal{padding:0;align-items:center}

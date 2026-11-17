@@ -97,7 +97,7 @@ function watchCentre(){
   centreObs && centreObs.disconnect();
   if (!touch.matches || !('IntersectionObserver' in window)) return;
   centreObs = new IntersectionObserver(entries => entries.forEach(e => e.target.classList.toggle('on', e.isIntersecting)),
-    { rootMargin: '-45% 0px -45% 0px' });   /* a thin band across the middle of the screen */
+    { rootMargin: '-49% 0px -49% 0px' });   /* a thin band across the middle of the screen */
   main.querySelectorAll('.item').forEach(el => centreObs.observe(el));
 }
 function filters(id){
