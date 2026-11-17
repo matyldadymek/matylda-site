@@ -1,44 +1,66 @@
-- title: WBD Sports – Bike to survive
+- title: Bike to survive
   tagline: Cycling
+  type: WBD Sports, 4-part documentary
+  length: 25 min each
+  clip: excerpt
   link: https://www.youtube.com/watch?v=2Z1KKEqf0Dw
   image: images/wbd-sports-bike-to-survive.jpg
-- title: Eurosport – Rio as the playground
+- title: Rio as the playground
   tagline: Olympics
+  type: Eurosport, documentary
+  length: 52 min
+  clip: excerpt
   link: https://youtu.be/Fc_Hg8uSHd0
   image: images/eurosport-rio-as-the-playground.jpg
-- title: WBD Sports – Round and round we go
+- title: Round and round we go
   tagline: Sport
+  type: WBD Sports, speedway highlights review
+  length: 45 min
+  clip: excerpt
   link: https://vimeo.com/1015288530
   corner: bottom-left
   image: images/wbd-sports-round-and-round-we-go.jpg
-- title: Discovery – Moody racing
+- title: Moody Racing
   tagline: Motorsport
+  type: Discovery Events, WTCC promo
+  length: 60 sec
   link: https://vimeo.com/237415154
   image: images/discovery-moody-racing.jpg
-- title: Eurosport – Olympic Confessions
+- title: Olympic Confessions
   tagline: Olympics
+  type: Eurosport, report
+  length: 90 sec
   link: https://vimeo.com/237568348
   image: images/eurosport-olympic-confessions.jpg
-- title: Eurosport – A new season of noise!
+- title: A new season of noise
   tagline: Season promo
+  type: MotoGP promo
+  length: 50 sec
   link: https://vimeo.com/264452343
   image: images/eurosport-a-new-season-of-noise.jpg
-- title: Discovery – Kayaking is simple
+- title: The Secret Science of the Paddle
   tagline: Outdoors
+  type: Discovery, explainer report
+  length: 5 min
   link: https://vimeo.com/264452687
   corner: bottom-left
   image: images/discovery-kayaking-is-simple.jpg
-- title: BBC – An overall look
-  tagline: Demo
-  link: https://youtu.be/64VjSqqbjeQ
-  corner: bottom-right
-  image: images/bbc-demo-kitchen.jpg
-- title: Eurosport – Boys getting ready to play
-  tagline: Sport
-  link: https://vimeo.com/132453109
-  image: images/eurosport-boys-getting-ready-to-play.jpg
-- title: Eurosport – Handball battle
+- title: Handball battle
   tagline: Handball
+  type: Eurosport, handball promo
+  length: 30 sec
   link: https://vimeo.com/264452211
   corner: bottom-left
   image: images/eurosport-handball-battle.jpg
+- title: Boys getting ready to play
+  tagline: Sport
+  type: Fight Club, fight sport programme
+  length: 45 min
+  link: https://vimeo.com/132453109
+  image: images/eurosport-boys-getting-ready-to-play.jpg
+- title: BBC – An overall look
+  tagline: Demo
+  type: Personal showreel
+  link: https://youtu.be/64VjSqqbjeQ
+  corner: bottom-right
+  image: images/bbc-demo-kitchen.jpg
