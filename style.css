@@ -62,6 +62,10 @@ main{padding-block:36px 56px;min-height:50vh}
 
 /* contact */
 .contact{text-align:center;display:flex;flex-direction:column;align-items:center;gap:22px;padding-block:24px}
+.contact .hello-link{display:block;cursor:pointer;transition:transform .3s ease}
+.contact .hello-link:hover{transform:scale(1.02)}
+.contact .hello{display:block;height:min(52vh,560px);width:auto;max-width:100%;aspect-ratio:9/16;object-fit:cover;background:var(--rule)}
+@media (prefers-reduced-motion:reduce){.contact .hello{display:none}}
 .contact h1{font-weight:400;font-size:clamp(22px,2.6vw,28px);letter-spacing:.2em;text-transform:uppercase;margin:0;color:var(--forest)}
 .contact p{margin:0;color:var(--olive);max-width:40ch}
 .email{font-size:17px;text-decoration:none;border-bottom:1px solid var(--rose);padding-bottom:2px}

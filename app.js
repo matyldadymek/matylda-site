@@ -121,6 +121,10 @@ const IG_ICON = `<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.
 /* ";)" in the contact text is drawn as a small wink face in the site's colours */
 const WINK = `<svg class="wink" viewBox="0 0 24 24" role="img" aria-label="wink"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="8.6" cy="9.6" r="1.35" fill="currentColor"/><path d="M13.6 9.8q1.8-1.5 3.6 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M7.6 14.2q4.4 4 8.8 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`;
 
+/* looping "hello" animation (After Effects) on the contact page: silent, plays inline on phones */
+const HELLO_VIDEO = `<video class="hello" autoplay muted loop playsinline preload="auto" poster="media/hello-poster.jpg" aria-label="Hello, cześć, hej, salut">
+  <source src="media/hello-loop.webm" type="video/webm"><source src="media/hello-loop.mp4" type="video/mp4"></video>`;
+
 /* ---- pages ---- */
 function render(){
   const ids = CATS.map(c => c.id);
@@ -133,7 +137,7 @@ function render(){
     main.innerHTML = grid(ALL.filter(v => v.featured).sort((a,b) => a.featured - b.featured));
   } else if (id === 'contact'){
     const c = SITE.contact || {};
-    main.innerHTML = `<section class="contact"><h1>${esc(c.headline)}</h1><p>${esc(c.text).replace(/;-?\)/g, WINK)}</p>
+    main.innerHTML = `<section class="contact">${c.email ? `<a class="hello-link" href="mailto:${esc(c.email)}" title="Email me" aria-label="Email ${esc(c.email)}">${HELLO_VIDEO}</a>` : HELLO_VIDEO}<h1>${esc(c.headline)}</h1><p>${esc(c.text).replace(/;-?\)/g, WINK)}</p>
       ${c.email ? `<a class="email" href="mailto:${esc(c.email)}">${esc(c.email)}</a>` : ''}
       <ul class="social">${(c.links || []).map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener"${ICONS[l.name.toLowerCase()] ? ` class="icon" aria-label="${esc(l.name)}" title="${esc(l.name)}">${ICONS[l.name.toLowerCase()]}` : `>${esc(l.name)}`}</a></li>`).join('')}</ul></section>`;
   } else if (id === 'work'){
