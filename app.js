@@ -101,7 +101,7 @@ function watchCentre(){
   main.querySelectorAll('.item').forEach(el => centreObs.observe(el));
 }
 function filters(id){
-  return `<ul class="filters">` + [['work','All'], ...CATS.map(c => [c.id, c.title])]
+  return `<ul class="filters">` + CATS.map(c => [c.id, c.title])
     .map(([k,l]) => `<li><a href="#${k}"${k === id ? ' aria-current="page"' : ''}>${esc(l)}</a></li>`).join('') + `</ul>`;
 }
 
@@ -113,13 +113,16 @@ const ICONS = {
 /* films without a video link go to the end, everything else keeps its order */
 const lastIfNoLink = list => [...list.filter(v => v.link), ...list.filter(v => !v.link)];
 
+/* "Work" in the menu opens the first section */
+function setWorkLink(){ const w = nav.querySelector('a[data-top="work"]'); if (w && CATS[0]) w.href = '#' + CATS[0].id; }
+
 /* ---- pages ---- */
 function render(){
   const ids = CATS.map(c => c.id);
   let id = location.hash.slice(1);
   if (!['home','work','contact',...ids].includes(id)) id = 'home';
   const top = (id === 'work' || ids.includes(id)) ? 'work' : id;
-  nav.querySelectorAll('a').forEach(a => a.getAttribute('href') === '#' + top ? a.setAttribute('aria-current','page') : a.removeAttribute('aria-current'));
+  nav.querySelectorAll('a').forEach(a => a.dataset.top === top ? a.setAttribute('aria-current','page') : a.removeAttribute('aria-current'));
 
   if (id === 'home'){
     main.innerHTML = grid(ALL.filter(v => v.featured).sort((a,b) => a.featured - b.featured));
@@ -129,7 +132,8 @@ function render(){
       ${c.email ? `<a class="email" href="mailto:${esc(c.email)}">${esc(c.email)}</a>` : ''}
       <ul class="social">${(c.links || []).map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener"${ICONS[l.name.toLowerCase()] ? ` class="icon" aria-label="${esc(l.name)}" title="${esc(l.name)}">${ICONS[l.name.toLowerCase()]}` : `>${esc(l.name)}`}</a></li>`).join('')}</ul></section>`;
   } else if (id === 'work'){
-    main.innerHTML = filters(id) + grid(lastIfNoLink(ALL));
+    /* there is no "All" page any more: old links open the first section */
+    location.replace('#' + CATS[0].id); return;
   } else {
     main.innerHTML = filters(id) + grid(lastIfNoLink(ALL.filter(v => v.cat === id)));
   }
@@ -215,6 +219,7 @@ window.addEventListener('hashchange', () => { render(); window.scrollTo(0,0); })
       const vids = (await load(`content/videos/${c.id}.yml`)) || [];
       vids.forEach(v => ALL.push({ ...v, cat: c.id }));
     }
+    setWorkLink();
     render();
   } catch (err){
     main.innerHTML = `<p class="loading">Something went wrong loading the site. ${esc(err.message)}</p>`;
