@@ -61,6 +61,7 @@
 - title: BBC – An overall look
   tagline: Demo
   type: Personal showreel
+  small: true
   link: https://youtu.be/64VjSqqbjeQ
   corner: bottom-right
   image: images/bbc-demo-kitchen.jpg

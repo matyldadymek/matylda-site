@@ -28,6 +28,7 @@ Each film looks like this:
   colour: rose                        # optional: green, lime, rose, mauve, sage, olive, clay, plum, forest, ink
   image: images/silence-radio.jpg     # optional: your own thumbnail
   fill: true                          # optional: crop black bars baked into an old 4:3 video
+  small: true                         # optional: smaller player for old, low-quality videos
   mature: true                        # optional: adult film – shows a notice and a 'Watch on Vimeo' button
 ```
 
