@@ -100,6 +100,17 @@ function watchCentre(){
     { rootMargin: '-49% 0px -49% 0px' });   /* a thin band across the middle of the screen */
   main.querySelectorAll('.item').forEach(el => centreObs.observe(el));
 }
+/* at the very bottom of the page the last film can never reach the middle, so reveal it there */
+window.addEventListener('scroll', () => {
+  if (!touch.matches) return;
+  const items = main.querySelectorAll('.item'); if (!items.length) return;
+  const last = items[items.length - 1];
+  const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+  const r = last.getBoundingClientRect();
+  if (atBottom && r.top < window.innerHeight && r.bottom > 0){
+    items.forEach(el => el.classList.toggle('on', el === last));
+  }
+}, { passive: true });
 function filters(id){
   return `<ul class="filters">` + CATS.map(c => [c.id, c.title])
     .map(([k,l]) => `<li><a href="#${k}"${k === id ? ' aria-current="page"' : ''}>${esc(l)}</a></li>`).join('') + `</ul>`;
@@ -121,9 +132,13 @@ const IG_ICON = `<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.
 /* ";)" in the contact text is drawn as a small wink face in the site's colours */
 const WINK = `<svg class="wink" viewBox="0 0 24 24" role="img" aria-label="wink"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="8.6" cy="9.6" r="1.35" fill="currentColor"/><path d="M13.6 9.8q1.8-1.5 3.6 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M7.6 14.2q4.4 4 8.8 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`;
 
-/* looping "hello" animation (After Effects) on the contact page: silent, plays inline on phones */
-const HELLO_VIDEO = `<video class="hello" autoplay muted loop playsinline preload="auto" poster="media/hello-poster.jpg" aria-label="Hello, cześć, hej, salut">
-  <source src="media/hello-loop.webm" type="video/webm"><source src="media/hello-loop.mp4" type="video/mp4"></video>`;
+/* looping "hello" animation (After Effects) on the contact page.
+   An animated image, not a video: phones always play and loop it, even in Low Power Mode.
+   People who switched off animations on their device see a still frame instead. */
+const HELLO_VIDEO = `<picture class="hello-pic">
+  <source media="(prefers-reduced-motion: reduce)" srcset="media/hello-poster.jpg">
+  <img class="hello" src="media/hello-loop.webp" width="540" height="960" alt="Hello, cześć, hej, salut"></picture>`;
+function keepLooping(){}
 
 /* ---- pages ---- */
 function render(){
@@ -140,6 +155,7 @@ function render(){
     main.innerHTML = `<section class="contact">${c.email ? `<a class="hello-link" href="mailto:${esc(c.email)}" title="Email me" aria-label="Email ${esc(c.email)}">${HELLO_VIDEO}</a>` : HELLO_VIDEO}<h1>${esc(c.headline)}</h1><p>${esc(c.text).replace(/;-?\)/g, WINK)}</p>
       ${c.email ? `<a class="email" href="mailto:${esc(c.email)}">${esc(c.email)}</a>` : ''}
       <ul class="social">${(c.links || []).map(l => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener"${ICONS[l.name.toLowerCase()] ? ` class="icon" aria-label="${esc(l.name)}" title="${esc(l.name)}">${ICONS[l.name.toLowerCase()]}` : `>${esc(l.name)}`}</a></li>`).join('')}</ul></section>`;
+    keepLooping();
   } else if (id === 'work'){
     /* there is no "All" page any more: old links open the first section */
     location.replace('#' + CATS[0].id); return;
@@ -175,7 +191,11 @@ main.addEventListener('click', async e => {
     /* mature films: Vimeo won't play them inside other sites, so send viewers to Vimeo to confirm their age */
     const img = await thumbnail(v);
     screen.innerHTML = (img ? `<img src="${esc(img)}" alt="">` : '') +
-      (v.mature ? `<p class="notice">This film is for adult audiences.<br>Vimeo will ask you to confirm your age before it plays.</p>` : '');
+      (v.mature ? `<a class="notice" href="${esc(v.link)}" target="_blank" rel="noopener">
+         <span class="badge">18+</span>
+         <strong>${esc(v.mature_note || 'This film is for adult audiences')}</strong>
+         <span>Click through to watch on Vimeo, where you'll be asked to confirm you're 18 or over.</span>
+         <span class="go">Watch on Vimeo →</span></a>` : '');
     go.href = v.link; go.hidden = false;
     const ig = /instagram\.com/.test(v.link);
     go.innerHTML = v.mature || /vimeo\.com/.test(v.link) ? 'Watch on Vimeo'
