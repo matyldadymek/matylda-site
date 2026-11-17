@@ -1,11 +1,13 @@
 - title: French cycling star
   tagline: Instagram
+  type: Eurosport France, social-first edit, Reels
   link: https://www.instagram.com/p/DZSuvwIILUv/
   fill: false
   mature: false
   image: images/french-cycling-star-2.jpg
 - title: Whisky stories
   tagline: Instagram
+  type: Highland Park, branded content campaign
   link: https://www.instagram.com/p/CzEi09gstNI/
   featured: 3
   fill: false
@@ -13,27 +15,31 @@
   image: images/whisky-stories-highland-park.jpg
 - title: Mixing creativity and ice-cream toppings
   tagline: Branded content
+  type: McDonald’s McFlurry, brand film
   link: https://www.youtube.com/watch?v=9qRgkbWZbxQ
   featured: 2
   fill: false
   mature: false
   image: images/mixing-creativity-and-ice-cream-toppings.jpg
-- title: Great Day
+- title: Creative financing
   tagline: A day at the Philharmonic
+  type: Société Générale, event film
   link: https://vimeo.com/315217789
   featured: 5
   corner: top-right
   fill: false
   mature: false
   image: images/great-day.jpg
-- title: The sports wear conference
+- title: How to look good in sports
   tagline: Event film
+  type: ISPO Munich, event recap
   link: https://vimeo.com/322269280
   fill: false
   mature: false
   image: images/the-sports-wear-conference.jpg
 - title: Dancing stories
   tagline: Instagram
+  type: R29, social-first edit, Reels
   link: https://www.instagram.com/tv/CAdHJ3wgbTo/
   corner: bottom-right
   fill: false
@@ -41,24 +47,21 @@
   image: images/dancing-stories-r29-clean.jpg
 - title: Święta w Warszawie
   tagline: No place like Christmas in Warsaw
+  type: Warsaw City Council, Christmas decorations campaign, all platforms
   link: https://www.youtube.com/watch?v=rDs8W4c5F40
   fill: false
   mature: false
-- title: Expresso
-  tagline: Promoting post-production
-  link: https://youtu.be/GnTj5GoZs68
-  fill: false
-  mature: false
-  image: images/expresso-boy-window.jpg
-- title: Żołądkowa
-  tagline: Drink Polish vodka!
-  link: https://vimeo.com/264461523
-  fill: false
-  mature: false
-- title: Reserved
+- title: Reserved clothing
   tagline: Meet a super model
+  type: Koledzy agency, fashion campaign film
   link: https://www.youtube.com/watch?v=6mZO5kLe6Sw
   corner: top-left
   colour: lime
+  fill: false
+  mature: false
+- title: How vodka is cool
+  tagline: Drink Polish vodka!
+  type: Koledzy agency, Żołądkowa vodka ad
+  link: https://vimeo.com/264461523
   fill: false
   mature: false
