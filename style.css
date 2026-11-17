@@ -79,8 +79,8 @@ footer{text-align:center;font-size:11px;letter-spacing:.18em;text-transform:uppe
 /* bar under the video: one slim line in the same colour as the film's triangle */
 .pinfo{position:relative;background:var(--bar,var(--bg));color:var(--bartext,var(--ink));padding:18px 210px;
   display:flex;align-items:baseline;justify-content:center;flex-wrap:wrap;gap:2px 12px}
-.pinfo h2{margin:0;font-weight:400;font-size:16px;letter-spacing:.04em}
-.pinfo p{margin:0;font-size:13px;opacity:.8}
+.pinfo h2{margin:0;font-weight:600;font-size:16px;letter-spacing:.04em}
+.pinfo p{margin:0;font-size:14px;opacity:.9}
 .pinfo .acts{position:absolute;right:12px;top:50%;transform:translateY(-50%);display:flex;gap:8px}
 .pinfo .acts a,.pinfo .acts button{font:inherit;font-size:11px;letter-spacing:.16em;text-transform:uppercase;line-height:1.4;
   padding:4px 12px;border:1px solid currentColor;background:transparent;color:inherit;cursor:pointer;text-decoration:none}
@@ -110,7 +110,7 @@ footer{text-align:center;font-size:11px;letter-spacing:.18em;text-transform:uppe
   .modal{padding:0;align-items:center}
   .pinfo{padding:10px 14px 12px;gap:0 10px}
   .pinfo h2{font-size:14px;width:100%}
-  .pinfo p{font-size:12px}
+  .pinfo p{font-size:13px}
   .pinfo .acts{gap:8px}
 }
 @media (max-width:640px) and (min-width:420px){.filters{justify-content:center}}

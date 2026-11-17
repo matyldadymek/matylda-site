@@ -164,7 +164,11 @@ main.addEventListener('click', async e => {
     go.textContent = v.mature || /vimeo\.com/.test(v.link) ? 'Watch on Vimeo' : 'Go to site';
   }
   document.getElementById('mt').textContent = v.title;
-  document.getElementById('mtag').textContent = v.tagline || '';
+  /* bar text: type of project and its full length, e.g. "Fiction feature (45 min) · excerpt".
+     Until a film has a type, its old short description is shown instead. */
+  const info = v.type ? [v.type + (v.length ? ` (${v.length})` : ''), v.excerpt ? 'excerpt' : ''].filter(Boolean).join(' · ')
+                      : (v.tagline || '');
+  document.getElementById('mtag').textContent = info;
   screen.style.aspectRatio = ratio;
   panel.style.maxWidth = `calc(82vh * ${ratio})`;   /* tall videos never run off the screen */
   const tint = b.style.getPropertyValue('--tint');                 /* same colour as this film's triangle */

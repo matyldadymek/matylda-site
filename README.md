@@ -18,7 +18,10 @@ Each film looks like this:
 
 ```yaml
 - title: Silence Radio
-  tagline: Difficult choices          # shown in the pop-up
+  type: Short film                    # shown in the pop-up bar, after the title
+  length: 12 min                      # full length of the project, shown in brackets
+  excerpt: true                       # optional: the video is an excerpt
+  tagline: Difficult choices          # old description, only shown while type is empty
   link: https://vimeo.com/192494313   # Vimeo/YouTube play on the site; other links open in a new tab
   featured: 3                         # optional: position on the homepage
   corner: bottom-right                # optional: top-left, top-right, bottom-left, bottom-right

@@ -16,8 +16,17 @@ content:
         label: Title
         type: string
         required: true
+      - name: type
+        label: Type of project, e.g. Fiction feature, Short film, Documentary, TV promo
+        type: string
+      - name: length
+        label: Full length of the project, e.g. 45 min
+        type: string
+      - name: excerpt
+        label: The video is an excerpt (adds "· excerpt" after the length)
+        type: boolean
       - name: tagline
-        label: Short description (shown in the pop-up)
+        label: Old short description (only shown while Type is empty)
         type: string
       - name: link
         label: Video link (Vimeo or YouTube plays on your site; anything else opens in a new tab)
@@ -58,8 +67,17 @@ content:
         label: Title
         type: string
         required: true
+      - name: type
+        label: Type of project, e.g. Fiction feature, Short film, Documentary, TV promo
+        type: string
+      - name: length
+        label: Full length of the project, e.g. 45 min
+        type: string
+      - name: excerpt
+        label: The video is an excerpt (adds "· excerpt" after the length)
+        type: boolean
       - name: tagline
-        label: Short description (shown in the pop-up)
+        label: Old short description (only shown while Type is empty)
         type: string
       - name: link
         label: Video link (Vimeo or YouTube plays on your site; anything else opens in a new tab)
@@ -100,8 +118,17 @@ content:
         label: Title
         type: string
         required: true
+      - name: type
+        label: Type of project, e.g. Fiction feature, Short film, Documentary, TV promo
+        type: string
+      - name: length
+        label: Full length of the project, e.g. 45 min
+        type: string
+      - name: excerpt
+        label: The video is an excerpt (adds "· excerpt" after the length)
+        type: boolean
       - name: tagline
-        label: Short description (shown in the pop-up)
+        label: Old short description (only shown while Type is empty)
         type: string
       - name: link
         label: Video link (Vimeo or YouTube plays on your site; anything else opens in a new tab)
@@ -142,8 +169,17 @@ content:
         label: Title
         type: string
         required: true
+      - name: type
+        label: Type of project, e.g. Fiction feature, Short film, Documentary, TV promo
+        type: string
+      - name: length
+        label: Full length of the project, e.g. 45 min
+        type: string
+      - name: excerpt
+        label: The video is an excerpt (adds "· excerpt" after the length)
+        type: boolean
       - name: tagline
-        label: Short description (shown in the pop-up)
+        label: Old short description (only shown while Type is empty)
         type: string
       - name: link
         label: Video link (Vimeo or YouTube plays on your site; anything else opens in a new tab)
@@ -184,8 +220,17 @@ content:
         label: Title
         type: string
         required: true
+      - name: type
+        label: Type of project, e.g. Fiction feature, Short film, Documentary, TV promo
+        type: string
+      - name: length
+        label: Full length of the project, e.g. 45 min
+        type: string
+      - name: excerpt
+        label: The video is an excerpt (adds "· excerpt" after the length)
+        type: boolean
       - name: tagline
-        label: Short description (shown in the pop-up)
+        label: Old short description (only shown while Type is empty)
         type: string
       - name: link
         label: Video link (Vimeo or YouTube plays on your site; anything else opens in a new tab)

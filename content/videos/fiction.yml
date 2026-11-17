@@ -13,6 +13,9 @@
   image: images/my-friend-the-polish-girl.jpg
 - title: BEASTS
   tagline: Within us
+  type: Fiction feature
+  length: 45 min
+  excerpt: true
   link: https://vimeo.com/86489030
   featured: 1
   colour: mauve
