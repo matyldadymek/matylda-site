@@ -53,7 +53,7 @@ main{padding-block:36px 56px;min-height:50vh}
 .item.bl .tint{clip-path:polygon(0 0,0 100%,100% 100%);--out:translate(-101%,101%)}
 .item.br .tint{clip-path:polygon(100% 0,100% 100%,0 100%);--out:translate(101%,101%)}
 .ov{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:16px}
-.ov .t{background:rgba(251,252,249,.85);color:var(--tint);font-weight:600;font-size:clamp(13px,1.2vw,15px);letter-spacing:.06em;line-height:1.35;padding:8px 14px;max-width:85%;text-wrap:balance;
+.ov .t{background:rgba(251,252,249,.85);color:var(--tt,var(--tint));font-weight:600;font-size:clamp(13px,1.2vw,15px);letter-spacing:.06em;line-height:1.35;padding:8px 14px;max-width:85%;text-wrap:balance;
   opacity:0;transform:translateY(8px);transition:opacity .35s ease .15s,transform .35s ease .15s}
 .item:hover .tint,.item:focus-visible .tint,.item.on .tint{transform:var(--out)}
 .item:hover .img,.item:focus-visible .img,.item.on .img{filter:none;transform:scale(1.03)}

@@ -76,7 +76,7 @@ function colours(list){
   return out;
 }
 function tile(v, k, c){
-  return `<button type="button" class="item ${corner(v)}" data-i="${ALL.indexOf(v)}" style="--tint:var(${c})" aria-label="${esc(v.title)}">
+  return `<button type="button" class="item ${corner(v)}" data-i="${ALL.indexOf(v)}" style="--tint:var(${c})${FRAMES.includes('--' + v.title_colour) ? `;--tt:var(--${v.title_colour})` : ''}" aria-label="${esc(v.title)}">
     <span class="frame"><span class="img"></span><span class="tint"></span><span class="ov"><span class="t">${esc(v.title)}</span></span></span>
     <span class="tb">${esc(v.title)}</span></button>`;
 }
