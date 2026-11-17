@@ -1,51 +1,83 @@
-- title: Go behind the scenes of a Detroit art project
+- title: The Making of a Detroit art project
   tagline: 13 min
+  type: Documentary
+  length: 13 min
   link: https://www.youtube.com/watch?v=vCFu8kaSfqA
   featured: 7
   corner: bottom-right
   image: images/go-behind-the-scenes-of-a-detroit-art-project.jpg
-- title: VICE – Sounds of Concrete
+- title: VICE in collaboration with Comme des Garçons – Sounds of Concrete
   tagline: For Comme des Garçons
+  type: Documentary
+  length: 5 min
   link: https://www.84paris.com/fr/work/comme-des-garcons-sounds-of-concrete-fr
   image: images/vice-sounds-of-concrete.jpg
 - title: Stina Ekblad and the Music
   tagline: Reflections on the power of music
+  type: Documentary
+  length: 52 min
+  clip: excerpt
   link: https://youtu.be/hWgHS2T4u1M
   corner: bottom-left
   image: images/stina-ekblad-and-the-music.jpg
 - title: Daniel Harding
   tagline: Passion and controversy in classical music
+  type: Documentary
+  length: 52 min
+  clip: excerpt
   link: https://vimeo.com/154483591
   corner: bottom-left
   image: images/daniel-harding.jpg
 - title: Herbert Blomstedt
   tagline: He's 85 years old and he won't stop
+  type: Documentary
+  length: 52 min
+  clip: excerpt
   link: https://vimeo.com/66496970
   corner: top-left
-- title: Chopin's Warsaw
+- title: Chopin’s Warsaw
   tagline: This is where he came from
+  type: Documentary
+  length: 30 min
+  clip: excerpt
   link: https://www.youtube.com/watch?v=s2_coVXj9bI
 - title: Stockholm Syndrome Ensemble
   tagline: Innovation in chamber music
+  type: Documentary
+  length: 52 min
+  clip: excerpt
   link: https://vimeo.com/132446689
   featured: 6
   colour: mauve
   image: images/stockholm-syndrome-ensemble.jpg
 - title: The Royal Family
   tagline: What did they get up to?
+  type: Documentary
+  length: 52 min
+  clip: excerpt
   link: https://vimeo.com/139941620
   image: images/the-royal-family.jpg
-- title: Rencontre(s) avec Michel Déon
-  tagline: A portrait
-  image: images/rencontre-s-avec-michel-deon.jpg
+- title: The Deadly Sins
+  tagline: Rendered in poetry, dance and music
+  type: 2-part musical documentary
+  length: 52 min each
+  clip: excerpt
+  link: https://vimeo.com/139954644
+  image: images/the-deadly-sins.jpg
 - title: Drużyna / The Team
   tagline: Having a dream
+  type: Documentary
+  length: 25 min
+  clip: excerpt
   link: https://vimeo.com/65747220
   corner: bottom-left
 - title: Święta Lipka
   tagline: Inside the sanctuary
+  type: Documentary
+  length: 52 min
   image: images/swieta-lipka.jpg
-- title: The Deadly Sins
-  tagline: Rendered in poetry, dance and music
-  link: https://vimeo.com/139954644
-  image: images/the-deadly-sins.jpg
+- title: Rencontre(s) avec Michel Déon
+  tagline: A portrait
+  type: Documentary
+  length: 22 min
+  image: images/rencontre-s-avec-michel-deon.jpg
