@@ -51,35 +51,30 @@ Films without a colour get one automatically, arranged so neighbours never match
 
 Colours, font and spacing are in `style.css` (the palette is at the top). Behaviour is in `app.js`.
 
-## Still to do (plan for 17 Nov 2026)
+## Still to do (plan for 18 Nov 2026)
 
-**1. Text: titles and descriptions** – done 17 Nov for Fiction, Documentary, Broadcast & streaming and Short form (Motion graphics kept as is)
-- [ ] Go through every film, section by section. The title shows on the thumbnail; the short description shows only in the pop-up.
-  - [ ] Fiction (12 films)
-  - [ ] Documentary (12 films)
-  - [ ] Broadcast & streaming (10 films)
-  - [ ] Short form (10 films)
-  - [ ] Motion graphics (3 films)
-- [ ] Make the style consistent: brand prefixes ("Eurosport –", "WBD Sports –"), capitals, and descriptions that just say "Instagram".
-- [ ] The text on the contact page.
+Done on 17 Nov: titles and descriptions (Fiction, Documentary, Broadcast & streaming, Short form), order of Documentary and Broadcast, "All" removed, pop-up text bar, 18+ notice for BEASTS, hello animation on the contact page, domain pointed to this site.
 
-**2. Order of films in each section**
-- [ ] Decide the order inside each section (top-left first). The **All** filter on the Work page follows the same order, section by section.
-- [ ] Check the homepage nine still feel right afterwards.
+**1. Padlock (HTTPS) and Weebly**
+- [ ] When GitHub has the certificate: Settings → Pages → tick **Enforce HTTPS**.
+- [ ] Check https://www.matyldadymek.co.uk opens with the padlock, then cancel the Weebly website plan (keep the domain and email at GoDaddy).
 
-**3. Mobile site**
-- [ ] On your phone, check: homepage, Work filters (swipe sideways), a few pop-ups (Vimeo, YouTube, BEASTS, a website film), contact page.
+**2. Phone check**
+- [ ] Homepage, each Work section (swipe the section names sideways), a few pop-ups (Vimeo, YouTube, BEASTS, Whisky stories on Instagram), contact page with the hello animation.
 - [ ] Screenshot anything that looks off.
+
+**3. Order and homepage**
+- [ ] Fiction: decide the order (top-left first).
+- [ ] Check the homepage nine still feel right.
 
 **4. Films that still need something**
 - [ ] *Rencontre(s) avec Michel Déon* and *Święta Lipka*: no video link – find one or remove them.
-- [ ] *Stats and emotions* (Motion graphics) uses the same Vimeo link as *Eurosport – Olympic Confessions* – check.
-- [ ] *Inside Out* is off the site until you have an open link (vimeo.com/42556875 is password-protected on someone else's account).
+- [ ] *Stats and emotions* (Motion graphics) uses the same Vimeo link as *Olympic Confessions* – check.
+- [ ] *Inside Out* is off the site until you have an open link.
 - [ ] *French cycling star*: the thumbnail looks like a press photo – check you may use it, or use a still from your edit.
+- [ ] Motion graphics: the three films still have the old-style descriptions – update them like the other sections, or keep.
 
 **5. Finishing touches**
 - [ ] A small icon for the browser tab.
 - [ ] The preview picture and text that appear when someone shares your link (WhatsApp, LinkedIn, email).
-
-**6. Go live**
-- [ ] Point matyldadymek.co.uk to this site, check everything on the real address, then cancel Weebly (keep the domain).
+- [ ] Optional: the blue letter outline in the hello animation in dark green.
