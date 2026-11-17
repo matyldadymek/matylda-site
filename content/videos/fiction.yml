@@ -75,7 +75,6 @@
   tagline: Loving isn't easy
   type: Fiction short
   length: 15 min
-  clip: excerpt
   link: https://vimeo.com/65747222
   corner: bottom-left
   image: images/fodelsedag.jpg
@@ -88,7 +87,6 @@
 - title: Sowa / Owl
   tagline: Łódź Film School graduation film
   type: Fiction short
-  length: 30 min
-  clip: excerpt
+  length: 25 min
   link: https://vimeo.com/37729199
   corner: bottom-right
