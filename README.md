@@ -53,7 +53,7 @@ Colours, font and spacing are in `style.css` (the palette is at the top). Behavi
 
 ## Still to do (plan for 17 Nov 2026)
 
-**1. Text: titles and descriptions**
+**1. Text: titles and descriptions** – done 17 Nov for Fiction, Documentary, Broadcast & streaming and Short form (Motion graphics kept as is)
 - [ ] Go through every film, section by section. The title shows on the thumbnail; the short description shows only in the pop-up.
   - [ ] Fiction (12 films)
   - [ ] Documentary (12 films)
