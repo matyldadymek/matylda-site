@@ -1,11 +1,15 @@
 - title: Everything I Ever Wanted to Tell My Daughter About Men
   tagline: Feature
+  type: Fiction feature
+  length: 90 min
   link: https://telleverything.org/movie
   featured: 9
   corner: bottom-left
   image: images/everything-i-ever-wanted-to-tell-my-daughter-about.jpg
 - title: My Friend the Polish Girl
   tagline: Teaser
+  type: Fiction feature
+  length: 90 min
   link: http://ewaandmateusz.com/myfriendthepolishgirl/
   featured: 4
   corner: top-left
@@ -13,50 +17,75 @@
   image: images/my-friend-the-polish-girl.jpg
 - title: BEASTS
   tagline: Within us
-  type: Fiction feature
-  length: 45 min
-  excerpt: true
+  type: Fiction
+  length: 6 min
   link: https://vimeo.com/86489030
   featured: 1
   colour: mauve
   image: images/beasts-2.jpg
 - title: The Blood Bride
   tagline: Teaser
+  type: Fiction short
+  length: 15 min
+  clip: trailer
   link: https://vimeo.com/237604812
   corner: top-right
   image: images/the-blood-bride.jpg
 - title: Nothing Important
   tagline: A lonely intrusion
+  type: Fiction short
+  length: 15 min
+  clip: trailer
   link: https://vimeo.com/237752671
   corner: bottom-left
   image: images/nothing-important.jpg
 - title: Expire Part I
   tagline: Music video
+  type: Music video
+  length: 3 min
   link: https://www.youtube.com/watch?v=AFrHCZp8X_8
   image: images/expire-part-i.jpg
 - title: Prick Thy Neighbour
   tagline: Quirky love
+  type: Fiction short
+  length: 15 min
+  clip: trailer
   link: https://vimeo.com/127040966
   corner: bottom-left
   image: images/prick-thy-neighbour.jpg
 - title: Via Rupta
   tagline: Broken souls
+  type: Fiction short
+  length: 15 min
+  clip: excerpt
   link: https://vimeo.com/139957205
   image: images/via-rupta.jpg
 - title: Silence Radio
   tagline: Difficult choices
+  type: Fiction short
+  length: 15 min
+  clip: excerpt
   link: https://vimeo.com/192494313
   corner: bottom-left
   image: images/silence-radio.jpg
 - title: Födelsedag
   tagline: Loving isn't easy
+  type: Fiction short
+  length: 15 min
+  clip: excerpt
   link: https://vimeo.com/65747222
   corner: bottom-left
   image: images/fodelsedag.jpg
 - title: Przyjdź do mnie
   tagline: Longing for someone
+  type: Fiction feature
+  length: 90 min
+  clip: excerpt
   link: https://vimeo.com/manage/videos/579444557
 - title: Sowa / Owl
   tagline: Łódź Film School graduation film
+  type: Fiction short
+  length: 15 min
+  clip: excerpt
   link: https://vimeo.com/37729199
   corner: bottom-right

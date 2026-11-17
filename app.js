@@ -166,7 +166,8 @@ main.addEventListener('click', async e => {
   document.getElementById('mt').textContent = v.title;
   /* bar text: type of project and its full length, e.g. "Fiction feature (45 min) · excerpt".
      Until a film has a type, its old short description is shown instead. */
-  const info = v.type ? [v.type + (v.length ? ` (${v.length})` : ''), v.excerpt ? 'excerpt' : ''].filter(Boolean).join(' · ')
+  const clip = v.clip || (v.excerpt ? 'excerpt' : '');
+  const info = v.type ? [v.type + (v.length ? ` (${v.length})` : ''), clip].filter(Boolean).join(' · ')
                       : (v.tagline || '');
   document.getElementById('mtag').textContent = info;
   screen.style.aspectRatio = ratio;

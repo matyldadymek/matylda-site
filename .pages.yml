@@ -22,9 +22,11 @@ content:
       - name: length
         label: Full length of the project, e.g. 45 min
         type: string
-      - name: excerpt
-        label: The video is an excerpt (adds "· excerpt" after the length)
-        type: boolean
+      - name: clip
+        label: The video is only part of the project (shown after the length)
+        type: select
+        options:
+          values: [excerpt, trailer, teaser]
       - name: tagline
         label: Old short description (only shown while Type is empty)
         type: string
@@ -73,9 +75,11 @@ content:
       - name: length
         label: Full length of the project, e.g. 45 min
         type: string
-      - name: excerpt
-        label: The video is an excerpt (adds "· excerpt" after the length)
-        type: boolean
+      - name: clip
+        label: The video is only part of the project (shown after the length)
+        type: select
+        options:
+          values: [excerpt, trailer, teaser]
       - name: tagline
         label: Old short description (only shown while Type is empty)
         type: string
@@ -124,9 +128,11 @@ content:
       - name: length
         label: Full length of the project, e.g. 45 min
         type: string
-      - name: excerpt
-        label: The video is an excerpt (adds "· excerpt" after the length)
-        type: boolean
+      - name: clip
+        label: The video is only part of the project (shown after the length)
+        type: select
+        options:
+          values: [excerpt, trailer, teaser]
       - name: tagline
         label: Old short description (only shown while Type is empty)
         type: string
@@ -175,9 +181,11 @@ content:
       - name: length
         label: Full length of the project, e.g. 45 min
         type: string
-      - name: excerpt
-        label: The video is an excerpt (adds "· excerpt" after the length)
-        type: boolean
+      - name: clip
+        label: The video is only part of the project (shown after the length)
+        type: select
+        options:
+          values: [excerpt, trailer, teaser]
       - name: tagline
         label: Old short description (only shown while Type is empty)
         type: string
@@ -226,9 +234,11 @@ content:
       - name: length
         label: Full length of the project, e.g. 45 min
         type: string
-      - name: excerpt
-        label: The video is an excerpt (adds "· excerpt" after the length)
-        type: boolean
+      - name: clip
+        label: The video is only part of the project (shown after the length)
+        type: select
+        options:
+          values: [excerpt, trailer, teaser]
       - name: tagline
         label: Old short description (only shown while Type is empty)
         type: string
