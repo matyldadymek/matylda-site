@@ -168,7 +168,8 @@ main.addEventListener('click', async e => {
     screen.innerHTML = (img ? `<img src="${esc(img)}" alt="">` : '') +
       (v.mature ? `<p class="notice">This film is for adult audiences.<br>Vimeo will ask you to confirm your age before it plays.</p>` : '');
     go.href = v.link; go.hidden = false;
-    go.textContent = v.mature || /vimeo\.com/.test(v.link) ? 'Watch on Vimeo' : 'Go to site';
+    go.textContent = v.mature || /vimeo\.com/.test(v.link) ? 'Watch on Vimeo'
+                   : /instagram\.com/.test(v.link) ? 'Watch on Instagram' : 'Go to site';
   }
   document.getElementById('mt').textContent = v.title;
   /* bar text: type of project and its full length, e.g. "Fiction feature (45 min) · excerpt".
