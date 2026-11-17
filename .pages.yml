@@ -55,6 +55,9 @@ content:
       - name: mature
         label: Adult content (opens on Vimeo with an age check instead of playing here)
         type: boolean
+      - name: mature_note
+        label: Adult content warning shown in the pop-up (e.g. Contains violent scenes)
+        type: string
       - name: title_colour
         label: Title text colour on the thumbnail (leave empty to match the triangle)
         type: select
@@ -113,6 +116,9 @@ content:
       - name: mature
         label: Adult content (opens on Vimeo with an age check instead of playing here)
         type: boolean
+      - name: mature_note
+        label: Adult content warning shown in the pop-up (e.g. Contains violent scenes)
+        type: string
       - name: title_colour
         label: Title text colour on the thumbnail (leave empty to match the triangle)
         type: select
@@ -171,6 +177,9 @@ content:
       - name: mature
         label: Adult content (opens on Vimeo with an age check instead of playing here)
         type: boolean
+      - name: mature_note
+        label: Adult content warning shown in the pop-up (e.g. Contains violent scenes)
+        type: string
       - name: title_colour
         label: Title text colour on the thumbnail (leave empty to match the triangle)
         type: select
@@ -229,6 +238,9 @@ content:
       - name: mature
         label: Adult content (opens on Vimeo with an age check instead of playing here)
         type: boolean
+      - name: mature_note
+        label: Adult content warning shown in the pop-up (e.g. Contains violent scenes)
+        type: string
       - name: title_colour
         label: Title text colour on the thumbnail (leave empty to match the triangle)
         type: select
@@ -287,6 +299,9 @@ content:
       - name: mature
         label: Adult content (opens on Vimeo with an age check instead of playing here)
         type: boolean
+      - name: mature_note
+        label: Adult content warning shown in the pop-up (e.g. Contains violent scenes)
+        type: string
       - name: title_colour
         label: Title text colour on the thumbnail (leave empty to match the triangle)
         type: select

@@ -21,6 +21,8 @@
   type: Fiction
   length: 6 min
   link: https://vimeo.com/86489030
+  mature: true
+  mature_note: Contains violent scenes
   featured: 1
   colour: mauve
   image: images/beasts-2.jpg
