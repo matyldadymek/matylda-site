@@ -116,6 +116,8 @@ const lastIfNoLink = list => [...list.filter(v => v.link), ...list.filter(v => !
 /* "Work" in the menu opens the first section */
 function setWorkLink(){ const w = nav.querySelector('a[data-top="work"]'); if (w && CATS[0]) w.href = '#' + CATS[0].id; }
 
+const IG_ICON = `<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg>`;
+
 /* ---- pages ---- */
 function render(){
   const ids = CATS.map(c => c.id);
@@ -168,8 +170,10 @@ main.addEventListener('click', async e => {
     screen.innerHTML = (img ? `<img src="${esc(img)}" alt="">` : '') +
       (v.mature ? `<p class="notice">This film is for adult audiences.<br>Vimeo will ask you to confirm your age before it plays.</p>` : '');
     go.href = v.link; go.hidden = false;
-    go.textContent = v.mature || /vimeo\.com/.test(v.link) ? 'Watch on Vimeo'
-                   : /instagram\.com/.test(v.link) ? 'Watch on Instagram' : 'Go to site';
+    const ig = /instagram\.com/.test(v.link);
+    go.innerHTML = v.mature || /vimeo\.com/.test(v.link) ? 'Watch on Vimeo'
+                 : ig ? 'Watch on ' + IG_ICON : 'Go to site';
+    go.setAttribute('aria-label', ig ? 'Watch on Instagram' : go.textContent);
   }
   document.getElementById('mt').textContent = v.title;
   /* bar text: type of project and its full length, e.g. "Fiction feature (45 min) · excerpt".
