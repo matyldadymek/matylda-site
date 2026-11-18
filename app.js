@@ -183,7 +183,7 @@ main.addEventListener('click', async e => {
   last = b;
   const panel = document.querySelector('.panel');
   let ratio = 16/9;
-  if (src && !v.mature){
+  if (src && !v.mature && !v.vimeo_only){
     /* Vimeo / YouTube: play the film here, in a frame shaped like the video itself */
     const r = await videoRatio(v.link);
     screen.innerHTML = `<iframe src="${src}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="${esc(v.title)}"></iframe>`;
@@ -196,7 +196,8 @@ main.addEventListener('click', async e => {
     go.hidden = true;
   } else {
     /* any other site: show the film's image, with a button to open the site */
-    /* mature films: Vimeo won't play them inside other sites, so send viewers to Vimeo to confirm their age */
+    /* mature films: Vimeo won't play them inside other sites, so send viewers to Vimeo to confirm their age.
+       vimeo_only films: their owner doesn't allow them to play on other sites, so the button opens them on Vimeo. */
     const img = await thumbnail(v);
     screen.innerHTML = (img ? `<img src="${esc(img)}" alt="">` : '') +
       (v.mature ? `<a class="notice" href="${esc(v.link)}" target="_blank" rel="noopener">

@@ -62,6 +62,21 @@
   link: https://vimeo.com/85859530
   corner: bottom-right
   colour: lime
+- title: Cédric et Maxime
+  type: Fiction short, part of an 8-episode series
+  length: 3 min
+  link: https://vimeo.com/71885791
+  vimeo_only: true
+  corner: bottom-left
+  image: images/cedric-et-maxime.jpg
+- title: Inside Out
+  type: Fiction short
+  length: 7 min
+  link: https://vimeo.com/45891722
+  vimeo_only: true
+  corner: bottom-left
+  colour: plum
+  image: images/inside-out.jpg
 - title: Via Rupta
   tagline: Broken souls
   type: Fiction short
