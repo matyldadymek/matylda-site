@@ -133,12 +133,20 @@ const IG_ICON = `<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.
 const WINK = `<svg class="wink" viewBox="0 0 24 24" role="img" aria-label="wink"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="8.6" cy="9.6" r="1.35" fill="currentColor"/><path d="M13.6 9.8q1.8-1.5 3.6 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M7.6 14.2q4.4 4 8.8 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`;
 
 /* looping "hello" animation (After Effects) on the contact page.
-   An animated image, not a video: phones always play and loop it, even in Low Power Mode.
+   Phones and tablets get an animated image: they always play and loop it, even in Low Power Mode.
+   Computers get a small video instead, because Safari on a Mac plays the animated image too slowly.
    People who switched off animations on their device see a still frame instead. */
-const HELLO_VIDEO = `<picture class="hello-pic">
-  <source media="(prefers-reduced-motion: reduce)" srcset="media/hello-poster.jpg">
-  <img class="hello" src="media/hello-loop.webp" width="540" height="960" alt="Hello, cześć, hej, salut"></picture>`;
-function keepLooping(){}
+const STILL = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const DESKTOP = matchMedia('(hover: hover) and (pointer: fine)').matches;
+const HELLO_VIDEO = STILL
+  ? `<img class="hello" src="media/hello-poster-2.jpg" width="540" height="960" alt="Hello, cześć, hej, salut">`
+  : DESKTOP
+  ? `<video class="hello" src="media/hello-loop-2.mp4" poster="media/hello-poster-2.jpg" width="540" height="960" autoplay muted loop playsinline disablepictureinpicture aria-label="Hello, cześć, hej, salut"></video>`
+  : `<img class="hello" src="media/hello-loop-2.webp" width="540" height="960" alt="Hello, cześć, hej, salut">`;
+function keepLooping(){
+  const v = main.querySelector('video.hello'); if (!v) return;
+  v.muted = true; const p = v.play(); if (p) p.catch(() => {});
+}
 
 /* ---- pages ---- */
 function render(){
