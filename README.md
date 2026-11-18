@@ -71,7 +71,7 @@ Done on 17 Nov: titles and descriptions (Fiction, Documentary, Broadcast & strea
 - [ ] *Rencontre(s) avec Michel Déon* and *Święta Lipka*: no video link – find one or remove them.
 - [ ] *Stats and emotions* (Motion graphics) uses the same Vimeo link as *Olympic Confessions* – check.
 - [ ] *Inside Out* is off the site until you have an open link.
-- [ ] *French cycling star*: the thumbnail looks like a press photo – check you may use it, or use a still from your edit.
+- [x] *French cycling star*: new thumbnail from your own edit (18 Nov).
 - [ ] Motion graphics: the three films still have the old-style descriptions – update them like the other sections, or keep.
 
 **5. Finishing touches**
