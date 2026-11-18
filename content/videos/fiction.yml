@@ -60,6 +60,8 @@
   type: Fiction short
   length: 15 min
   link: https://vimeo.com/85859530
+  corner: bottom-right
+  colour: lime
 - title: Via Rupta
   tagline: Broken souls
   type: Fiction short
