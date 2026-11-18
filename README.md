@@ -75,6 +75,6 @@ Done on 17 Nov: titles and descriptions (Fiction, Documentary, Broadcast & strea
 - [ ] Motion graphics: the three films still have the old-style descriptions – update them like the other sections, or keep.
 
 **5. Finishing touches**
-- [ ] A small icon for the browser tab.
-- [ ] The preview picture and text that appear when someone shares your link (WhatsApp, LinkedIn, email).
+- [x] A small icon for the browser tab (white M on green, 18 Nov).
+- [x] The preview picture that appears when someone shares your link (`share.png`, 18 Nov).
 - [ ] Optional: the blue letter outline in the hello animation in dark green.
